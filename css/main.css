@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1344px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* header > .nav */
+
+nav {
+    padding: 20px 0;
+    margin-bottom: 33px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+.navbar, nav .search, ul, nav .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    cursor: pointer;
+}
+
+nav .search {
+    justify-content: left;
+    width: 471px;
+    gap: 14px;
+    border: 1px solid #E5E5EA;
+    border-radius: 60px;
+    padding: 16px 24px;
+    box-shadow: 0px 12px 24px 0px #0510370A;
+    transition: all .7s ease;
+}
+nav .search img {
+    cursor: pointer;
+}
+
+nav .search input {
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+}
+
+ul {
+    gap: 32px;
+    list-style: none;
+}
+
+ul a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    transition: all .3s ease;
+}
+
+nav li:nth-child(1) a {
+    color: #007AFF;
+}
+
+nav a:hover {
+    color: #007AFF;
+}
+
+nav .links {
+    gap: 42px;
+}
+
+nav .flash {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 0.5px solid #E5E5EA;
+    border-radius: 50%;
+    box-shadow: 0px 10px 20px 0px #0510371A;
+    cursor: pointer;
+}
+
+nav button {
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px 20px;
+    color: #007AFF;
+    border: none;
+    border-radius: 33px;
+    background: #e0efff;
+    cursor: pointer;
+    transition: all .7s ease;
+}
+
+nav button:hover {
+    background-color: #007AFF;
+    color: white;
+    box-shadow: 0 0 15px 0 #007AFF;
+}
+
+/* header > .hero */
+
+.hero {
+    display: flex;
+    gap: 23px;
+    margin-bottom: 90px;
+}
+
+.hero .about {
+    padding: 48px 36px;
+    border-radius: 12px;
+    box-shadow: 0px 18px 34px 0px #05103726;
+}
+
+.hero h1 {
+    font-weight: 500;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.hero .person {
+    margin-bottom: 46px;
+}
+
+.hero .details {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 72px;
+}
+
+.hero h2 {
+    font-weight: 500;
+    font-size: 24px;
+    margin: 8px 0 4px;
+}
+
+.hero h4 {
+    font-weight: 500;
+    font-size: 16px;
+    color: #8E8E93;
+}
+
+.hero .line {
+    border-left: 1px solid #C7C7CC;
+}
+
+.hero .time {
+    display: flex;
+    gap: 20px;
+}
+
+.hero button {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    border: none;
+    border-radius: 45px;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: .5px;
+    color: white;
+    background: #007AFF;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all .7s ease;
+}
+
+.hero button:hover {
+    color: #007AFF;
+    background: none;
+    box-shadow: 0 0 15px 0 #007AFF;
+}
+
+.hero a {
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    letter-spacing: .3px;
+    transition: all .7s ease;
+}
+
+.hero a:hover {
+    color: #007AFF;
+    transform: scale(1.05);
+
+}
+
+/* main > auctions */
+
+.auctions {
+    margin-bottom: 80px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.title h1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.title p {
+    font-size: 20px;
+    color: #8E8E93;
+    cursor: pointer;
+    transition: all .7s ease;
+}
+
+.title p:hover {
+    color: #007AFF;
+    transform: scale(1.05);
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.card {
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all .7s ease;
+    overflow: hidden;
+}
+
+.card:hover, .cr-card:hover {
+    box-shadow: 0px 18px 34px 0px #007AFF20;
+    transform: scale(1.04);
+    border-radius: 40px;
+}
+
+.card:hover .details, .cr-card:hover .details {
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.card > img {
+    display: flex;
+}
+
+.card .details {
+    padding: 20px 32px;
+    border-bottom: 2px solid #E6E6E6;
+    border-right: 2px solid #E6E6E6;
+    border-left: 2px solid #E6E6E6;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    transition: all .7s ease;
+}
+
+.card h3 {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.auctions .card:nth-child(2) > .details > p {
+    margin-top: 24px;
+}
+
+.card .details > p {
+    margin: 48px 0 5px;
+    text-align: right;
+    color: #8E8E93;
+    letter-spacing: .3px;
+}
+
+.card .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.more {
+    display: block;
+    padding: 16px 64px;
+    border: 1px solid #AEAEB2;
+    border-radius: 48px;
+    background: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all .7s ease;
+    margin: 32px auto 80px;
+}
+
+.more:hover {
+    color: #007AFF;
+    border: 1px solid #007AFF50;
+    box-shadow: 0 0 15px 0 #007AFF50;
+}
+
+/* main > creators */
+
+.cr-card {
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all .7s ease;
+    overflow: hidden;
+    width: 312px;
+}
+
+.cr-card > img {
+    display: flex;
+}
+
+.cr-card .details {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px 20px;
+    border-bottom: 2px solid #E6E6E6;
+    border-right: 2px solid #E6E6E6;
+    border-left: 2px solid #E6E6E6;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    transition: all .7s ease;
+}
+
+.cr-card .name {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+
+.cr-card h2 {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.cr-card h3 {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.3px;
+}
+
+.cr-card p {
+    color: #3C3C4399;
+    margin-bottom: 80px;
+}
+
+.cr-card .follow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cr-card button {
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    background-color: #007AFF;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 38px;
+    cursor: pointer;
+    transition: all .7s ease;
+}
+
+.cr-card button:hover {
+    background: none;
+    color: #007AFF;
+    box-shadow: 0 0 15px 0 #007AFF50;
+}
+
+/* footer > head */
+
+footer {
+    background: black;
+    color: white;
+}
+
+footer .head {
+    padding: 40px 48px;
+    display: flex;
+    gap: 160px;
+    border-bottom: 1px solid #373739;
+}
+
+footer .head h2 {
+    font-weight: 550;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+footer .head p {
+    font-size: 18px;
+    color: #EBEBF599;
+    margin-bottom: 16px;
+}
+
+.subscribe {
+    position: relative;
+}
+
+.subscribe input {
+    width: 400px;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 72px;
+    background: #2c2c2e;
+    font-weight: 500;
+    font-size: 16px;
+    color: #EBEBF599;
+}
+
+.subscribe button {
+    position: absolute;
+    left: 300px;
+    padding: 10px 16px;
+    border-radius: 72px;
+    color: white;
+    background: #0A84FF;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all .7s ease;
+}
+
+.subscribe button:hover {
+    background: white;
+    color: #007AFF;
+    box-shadow: inset 0 0 5px 0 #007AFF;
+}
+
+/* footer > foot */
+
+.foot {
+    padding: 34px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.privacy {
+    display: flex;
+    gap: 64px;
+    align-items: center;
+}
+
+.foot img {
+    cursor: pointer;
+}
+
+.privacy a {
+    color: #EBEBF599;
+}
+
+.foot .social {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+
+
